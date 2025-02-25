@@ -1,0 +1,77 @@
+:root {
+    --color-primary: hsl(173, 50%, 90%);
+    --color-secondary: hsl(173, 50%, 10%);
+    --color-tertiary: hsl(233, 80%, 20%);
+    --color-accent: hsl(113, 80%, 20%);
+  }
+  .dark {
+    --color-primary: hsl(173, 50%, 10%);
+    --color-secondary: hsl(173, 50%, 90%);
+    --color-tertiary: hsl(233, 80%, 80%);
+    --color-accent: hsl(113, 80%, 80%);
+  }
+  
+  
+
+body{
+    background-color: var(--color-primary);
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color:var(--color-accent);
+    text-align: right;
+    padding: 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: var(--color-accent);
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+
+  .cardBudget {
+    background-color: white;
+    padding: 40px;
+    width: 70%;
+    border-radius: .5rem;
+  }
+
+  .cardSpending{
+    background-color: white;
+    padding: 40px;
+    width: 100%;
+    border-radius: .5rem;
+    height: 40%;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  .grid-item {
+   height: 40px;
+  }
+
+  .container{
+    display: flex;
+    margin: 200px;
+    margin-right: 1.5rem;
+   
+    column-gap: 1rem;
+  }
